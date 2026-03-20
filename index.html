@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Data story with flourish</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="how-to-make-a-story">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-12">
+            <p class="text-h1 mb-5">
+                Why Isn't Atlanta's Housing Supply Responding to Higher Prices?
+            </p >
+
+            <p class="text-body-1">
+                This past year, it became loud and clear that housing affordability is the biggest problem facing the Metro Atlanta region, according to the MAS Survey
+                <a href="https://atlantaregional.org/news/research-analytics/housing-affordability-ranks-as-regions-top-concern-arcs-2025-metro-atlanta-speaks-survey-shows/ ">[1]</a>. 
+                Housing supply shortages are often seen as a significant cause of our affordability challenges, so increasing supply—by loosening housing regulatory constraints—is a commonly pursued solution
+                <a href="https://www.freddiemac.com/research/insight/20210507-housing-supply ">[2]</a>.
+            </p> 
+
+            <div class="flourish-embed flourish-chart mt-3" data-src="visualisation/28155848">
+            </div>
+
+            <p class="text-body-1 mb-4">
+                A working paper from the Federal Reserve Bank of San Francisco by Louie, Mondragon, and Wieland examines the effects of housing supply constraints, such as regulation and geography, on housing prices and quantities across U.S. cities
+                <a href="https://www.frbsf.org/wp-content/uploads/wp2025-06.pdf ">[3]</a>. 
+                The paper uses Houston as an example of a metro area with relatively elastic housing supply, similar to many other Sun Belt cities. But what about our own supposedly elastic Sun Belt city of Atlanta? Let’s take a look at housing trends in the Metro Atlanta area over the past decades to see whether the data aligns with a typical supply-and-demand explanation—or if something more complex is at play.
+            </p> 
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="root">
+        <div class="row justify-content-center" id="scrolly__section">
+          <div class="col-4 scrolly__content">
+            <div class="step" data-step="1">
+              <div class="text-block pa-2">
+                <p class="text-body-1">When population grows, this typically leads to increased housing demand. When housing demand grows but housing supply does not, we expect housing prices to rise. The magnitude of that increase is typically thought to depend on the elasticity of the local housing supply.</p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div class="text-block pa-2">
+                <p class="text-body-1">However, the opposite occurred between 2007 and 2009. Of course, the real world is more complicated. This deviation from basic supply-and-demand theory can largely be explained by the housing bubble and its aftermath. Housing values were likely overinflated during the 2000s, and the subsequent drop in incomes and employment following the crash wiped out the price increases we might otherwise have expected from low construction levels and a growing population in Metro Atlanta
+                    <a href="https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath">[4]</a>. Sure.
+                </p>
+              </div>            
+            </div>
+            <div class="step" data-step="3">
+              <div class="text-block pa-2">
+                <p class="text-body-1">After the Great Recession, we can see that housing prices started to increase in 2012, and the rules of basic supply and demand began working again. The increasing Metro Atlanta population, combined with stagnant housing supply levels, corresponds to increasing housing demand, which we can see in rising home prices and decreasing housing inventory over that time period.</p>
+              </div>            
+            </div>
+            <div class="step" data-step="4">
+              <div class="text-block pa-2">
+                <p class="text-body-2">But that relationship starts to fall apart during the COVID years. Home prices and rents surged sharply, while housing inventory dropped. Unlike during the Great Recession, this spike wasn’t accompanied by a clear shift in housing supply trends. Nor was it driven by a dramatic acceleration in population growth, which remained relatively stable[5]. In other words, prices rose far more than we would expect based on supply and population alone. Very Interesting.
+                    <br class="br-tight">
+                    <br class="br-tight">This raises an important question: if higher prices signal unmet demand, why didn’t developers respond by building significantly more housing?
+                    <br class="br-tight">
+                    <br class="br-tight">Atlanta is often viewed as a market with relatively few geographic constraints and more flexible land-use policies than cities like San Francisco or New York. In theory, that should make its housing supply more responsive to price increases.
+                    But the data suggests otherwise—at least in the short term. Interestingly, the paper finds that similar patterns—rising prices without corresponding increases in supply (i.e., similar elasticity)—also occur in more constrained markets like San Francisco and New York. This suggests that Atlanta’s recent experience is not an anomaly among U.S. cities or across history, nor is it limited to highly regulated or geographically constrained cities.
+                    <br class="br-tight">
+                    <br class="br-tight">So what else could be driving these trends?
+              </div>         
+            </div>
+            <div class="step" data-step="5">
+                <div class="text-block pa-2">
+                  <p class="text-body-2">
+                    There could be many reasons during the COVID-19 pandemic. One explanation is that supply was not able to respond due to global supply chain issues at that time. This would shift the supply curve, resulting in higher housing prices. That is a very valid explanation, but it also comes with some complications to sort out.
+                    <br class="br-tight">Another reason could be that the demand curve shifted because social isolation during the pandemic increased the desire for living space, which resulted in higher prices. This is also a very valid explanation.
+                    <br class="br-tight">
+                    <br class="br-tight">There are likely many other factors, but a particularly interesting one—one that holds true not just during the pandemic but also during the Great Recession—is changes in income growth rates. Income levels rose during the COVID-19 pandemic due to stimulus checks and a volatile labor market. Rising incomes tend to increase demand. Not only would this lead to shifts in the demand curve, but it would also enable more specific housing preferences, such as higher demand for additional bedrooms or for homes in particular locations within a metro area.
+                    <br class="br-tight">The paper suggests that when we see higher housing prices alongside rising incomes, but without a corresponding increase in housing supply—as we have seen in Metro Atlanta—these more specific housing preference dynamics could be at play. Tracking the direction of incomes may be more revealing than tracking gradual changes in supply or population if we are trying to influence short-term housing affordability. If these dynamics are at play, they carry important implications for policy.
+                    
+                      </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-6 scrolly__chart">
+            <iframe scrolling="no" src="https://flo.uri.sh/story/872914/embed#slide-0"></iframe>
+          </div>
+        </div>        
+      </div>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-12">
+
+            <p class="text-body-1">
+                <br>
+                <br>
+                <br>
+                <br>Efforts to reduce regulatory barriers and increase housing supply remain essential—especially over the long term. Without an increase in housing supply for our growing population, we risk continuing to face the massive shortages we see today, which existed before and were exacerbated during the pandemic.
+                <br>
+                <br>But we cannot stop there. Supply-focused policies alone may have limited impact on affordability in the short run—and the short run seems to matter a lot in recent years. Broader economic forces—such as income growth, inequality, changing housing preferences, and global events—can significantly influence prices, sometimes more quickly than supply can respond.
+                <br>
+                <br>That means improving housing affordability may require a more comprehensive approach. In addition to encouraging new construction, policymakers may need to consider how incomes are changing, who benefits from that growth, and how preferences for housing are evolving.
+                <br>
+                <br>Housing markets are shaped by more than just the number of homes and the number of people who need them. They are also shaped by what people can afford—and what they want. This means recognizing that supply is only part of the equation, and that solving the affordability crisis will require a broader, more nuanced strategy if we want to nurse our housing market back to health.
+            </p> 
+
+            <p class="text-body-1">
+                Here is the data so you can play around with plotting various time series data to do your own analysis.
+            </p> 
+
+            <div class="flourish-embed flourish-chart mt-3" data-src="visualisation/28123810">
+            </div>
+            
+            <p class="text-h2"> 
+                <br>
+                Notes 
+            </p>
+            <p>
+                <br>[1] <a href="https://atlantaregional.org/news/research-analytics/housing-affordability-ranks-as-regions-top-concern-arcs-2025-metro-atlanta-speaks-survey-shows/"> Metro Atlanta Speaks 2025 Survey Ranks Housing Affordability as Regions Top Concern</a>  
+                <br>[2] <a href="https://www.freddiemac.com/research/insight/20210507-housing-supply ">Housing Supply: A Growing Deficit</a>
+                <br>[3] <a href="https://www.frbsf.org/wp-content/uploads/wp2025-06.pdf ">Louis, Mondragon, Wieland 2025, Supply Constraints Do Not Explain House Price and Quantity Growth Across U.S. Cities</a>
+                <br>[4] <a href="https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath">Great Recession and Its Aftermath</a>
+                <br>[5] It is also possible that data collection methods during the COVID years were uniquely affected compared to other periods. Even so, the effects of COVID-19 shocks are visible across multiple subsequent years.
+            </p>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/intersection-observer"></script>
+    <script src="https://unpkg.com/scrollama"></script>    
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <!-- Scrollama setup: github.com/russellgoldenberg/scrollama — handleStepEnter adjusted for Flourish story -->
+    <script src="main.js"></script>
+  </body>
+</html>
