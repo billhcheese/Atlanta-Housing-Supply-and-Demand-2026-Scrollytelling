@@ -11,9 +11,21 @@ var scroller = scrollama();
 
 // generic window resize listener event
 function handleResize() {
-  // 1. update height of step elements
-  var stepH = Math.floor(window.innerHeight * 1);
-  step.style("height", stepH + "px");
+  // 1. Update height of step elements.
+  // If text inside a step is taller than the viewport, a fixed `100vh`-style height
+  // causes the text to overflow and visually overlap the next step.
+  // Instead, size each step to its content, with a minimum of viewport height.
+  var minStepH = Math.floor(window.innerHeight * 1);
+
+  // Let the browser compute natural height first.
+  step.style("height", "auto");
+
+  // Then clamp to at least `minStepH`.
+  step.each(function () {
+    var naturalH = this.scrollHeight;
+    var h = Math.max(minStepH, naturalH);
+    d3.select(this).style("height", h + "px");
+  });
 
   var figureHeight = window.innerHeight * 0.75;
   var figureMarginTop = (window.innerHeight - figureHeight) / 2;
